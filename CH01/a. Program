@@ -1,0 +1,36 @@
+//using System;
+
+//namespace CH01
+//{
+//    class Program
+//    {
+//        static void Main(string[] args) // Main(생략 가능)
+//        {
+//            Console.WriteLine("Hello World!");
+//        }
+//    }
+//}
+
+using System;
+
+namespace Ch01
+{
+    class class1
+    {
+        public static void Main() // 메인이 여러개인 경우 실행이 되지 않는다.
+                                  // 프로젝트 - 속성에서 시작개체를 설정할 수 있다. 
+        {
+            Console.WriteLine("class1 Main() 실행");
+        }
+    }
+
+    class class2
+    {
+        public static void Main()
+        {
+            Console.WriteLine("class2 Main() 실행");
+        }
+    }
+}
+
+// 속성 창에서 컴파일러 작업 없음으로 설정하여 빌드에서 제외
