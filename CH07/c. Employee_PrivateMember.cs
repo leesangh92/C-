@@ -8,7 +8,7 @@ namespace CH07
         private int salary; // 접근 지시자가 없으면 private이 default
         private string comAddr;
 
-        public void Employee(string name, int salary, string comaddr)
+        public void Employee(string name, int salary, string comAddr)
         {
             this.name = name;
             this.salary = salary;
@@ -37,7 +37,7 @@ namespace CH07
             emp1.showData();
 
             Employee emp2 = new Employee("성춘향", 3700000, "서울시 강남구");
-            emp1.showData();
+            emp2.showData();
         }
     }
 }
